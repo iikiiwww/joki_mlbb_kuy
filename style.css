@@ -328,3 +328,82 @@ body {
     background-color: #1a1a1a;
     /* fallback kalau gambar gagal load */
 }
+
+@media screen and (max-width: 768px) {
+
+    header,
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events {
+        flex-direction: column;
+    }
+
+    .event img {
+        height: 160px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .btn-primary,
+    .sidebar-section .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .sidebar-section {
+        background-blend-mode: darken;
+        background-size: cover;
+        padding: 15px;
+    }
+}
