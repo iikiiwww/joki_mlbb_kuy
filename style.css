@@ -21,7 +21,7 @@ nav a {
 }
 
 .hero {
-    background: url('lukas.jpg') no-repeat center center/cover;
+    background: url('bg.png') no-repeat center center/cover;
     height: 500px;
     display: flex;
     align-items: center;
@@ -247,18 +247,14 @@ body {
 }
 
 .sidebar-section {
-    background: url('ling.png') no-repeat center center / cover;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* fallback overlay */
-    backdrop-filter: blur(3px);
-    /* biar keliatan glass effect */
-    border-radius: 10px;
-    padding: 20px;
+    background: url('lukas.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
 }
+
 
 .navbar {
     display: flex;
@@ -406,4 +402,68 @@ body {
         background-size: cover;
         padding: 15px;
     }
+}
+
+.detail-page img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 12px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #00bfff;
+    transform: scale(1.2);
 }
